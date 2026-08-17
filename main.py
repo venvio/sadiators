@@ -1,7 +1,7 @@
 import functions as f
 
-s_path = '/home/joshua/sadiators/data/most_stalemates.txt'
-r_path = '/home/joshua/sadiators/data/most_rounds.txt'
+s_path = './data/most_stalemates.txt'
+r_path = './data/most_rounds.txt'
 
 # load sadiator objects
 joshua = f.load_character('joshua')
@@ -19,6 +19,6 @@ f.record_check(r_path, rounds)
 f.save_data(joshua)
 f.save_data(walt)
 
-with open('/home/joshua/sadiators/data/wins.txt', 'w') as w:
+with open('./data/wins.txt', 'w') as w:
     w.write(f'Joshua wins: {joshua.wins}\n')
     w.write(f'Walt wins: {walt.wins}\n')

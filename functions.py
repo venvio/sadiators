@@ -4,7 +4,7 @@ import random
 # function for saving sadiator attributes to file
 def save_data(sadiator):
     # save data
-    with open(f'/home/joshua/sadiators/character_data/{sadiator.name}.pkl', 'wb') as f:
+    with open(f'./character_data/{sadiator.name}.pkl', 'wb') as f:
         pickle.dump(sadiator, f)
 
 # function for loading sadiator attributes to file
@@ -15,7 +15,7 @@ def load_data(path):
 
 # actually restores the load data
 def load_character(name):
-    return load_data(f'/home/joshua/sadiators/character_data/{name}.pkl')
+    return load_data(f'./character_data/{name}.pkl')
 
 # used to check for records
 def record_check(path, new):
